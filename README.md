@@ -42,7 +42,7 @@ allprojects {
 }
 
 项目的build.gradle加入
-compile 'com.github.Mr-wangyong:RetrofitCache:v1.0'
+compile 'com.github.Mr-wangyong:ShapeView:v1.0'
 ```
 
 

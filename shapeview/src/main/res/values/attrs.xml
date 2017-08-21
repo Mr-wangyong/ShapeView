@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ShapeView">
+    <attr name="shape" format="enum">
+      <enum name="rectangle" value="0"/>
+      <enum name="oval" value="1"/>
+      <enum name="line" value="2"/>
+      <enum name="ring" value="3"/>
+    </attr>
+
+    <attr name="cornersRadius" format="reference|dimension"/>
+    <attr name="cornersTopLeftRadius" format="reference|dimension"/>
+    <attr name="cornersTopRightRadius" format="reference|dimension"/>
+    <attr name="cornersBottomLeftRadius" format="reference|dimension"/>
+    <attr name="cornersBottomRightRadius" format="reference|dimension"/>
+
+    <attr name="strokeWidth" format="reference|dimension"/>
+    <attr name="strokeColor" format="reference|color"/>
+    <attr name="strokeDashGap" format="reference|dimension"/>
+    <attr name="strokeDashWidth" format="reference|dimension"/>
+
+
+    <attr name="gradientType" format="enum">
+      <enum name="linear" value="0"/>
+      <enum name="sweep" value="1"/>
+      <enum name="radial" value="2"/>
+    </attr>
+
+    <attr name="gradientStartColor" format="reference|color"/>
+    <attr name="gradientEndColor" format="reference|color"/>
+    <attr name="gradientCenterColor" format="reference|color"/>
+    <attr name="gradientAngle" format="reference|integer"/>
+    <attr name="gradientCenterX" format="reference|float"/>
+    <attr name="gradientCenterY" format="reference|float"/>
+    <attr name="gradientRadius" format="reference|dimension"/>
+    <attr name="gradientUseLevel" format="reference|boolean"/>
+
+    <attr name="solidColor" format="reference|color"/>
+
+
+  </declare-styleable>
+</resources>

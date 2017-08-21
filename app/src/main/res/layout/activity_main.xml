@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.mrwang.ShapeView
+      android:id="@+id/shape"
+      android:layout_width="50dp"
+      android:layout_height="100dp"
+      app:cornersBottomLeftRadius="10dp"
+      app:cornersBottomRightRadius="10dp"
+      app:cornersTopLeftRadius="15dp"
+      app:cornersTopRightRadius="15dp"
+      app:shape="rectangle"
+      app:solidColor="#00ff00"
+      app:strokeColor="#ff0000"
+      app:strokeWidth="2dp"/>
+
+    <com.mrwang.ShapeView
+      android:id="@+id/shape_2"
+      android:layout_width="50dp"
+      android:layout_height="100dp"
+      app:shape="rectangle"
+      app:solidColor="#00ff00"
+      app:strokeColor="#ffffff"
+      app:strokeDashGap="2dp"
+      app:strokeDashWidth="2dp"
+      app:strokeWidth="15dp"/>
+
+    <com.mrwang.ShapeView
+      android:id="@+id/shape_3"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      app:gradientEndColor="#0000ff"
+      app:gradientRadius="100dp"
+      app:gradientStartColor="#ff0000"
+      app:gradientType="sweep"
+      app:gradientUseLevel="false"
+      app:shape="oval"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.mrwang.ShapeView
+      android:id="@+id/shape_4"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginLeft="10dp"
+      app:gradientAngle="45"
+      app:gradientCenterColor="#00ff00"
+      app:gradientEndColor="#0000ff"
+      app:gradientStartColor="#ff0000"
+      app:gradientType="linear"
+      app:shape="rectangle"/>
+
+    <com.mrwang.ShapeView
+      android:id="@+id/shape_5"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      app:gradientAngle="45"
+      app:gradientCenterColor="#00ff00"
+      app:gradientEndColor="#0000ff"
+      app:gradientStartColor="#ff0000"
+      app:gradientType="radial"
+      app:shape="rectangle"/>
+  </LinearLayout>
+
+
+</LinearLayout>

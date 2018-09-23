@@ -3,10 +3,12 @@
 
 1. ##### 支持所有 ViewGroup ，再也不用通过叠加的方式去实现了，常见
 
+   ```
    1. LinearLayout    -->   ShapeLiearLayout
    2. RelativeLayout -->   ShapeRelativeLayout
    3. FrameLayout   -->   ShapeFrameLayout
    4. ConstraintLayout  --> ShapeConstraintLayout
+   ```
    
    
 

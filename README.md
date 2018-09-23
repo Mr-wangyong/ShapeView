@@ -1,7 +1,31 @@
 # ShapeView
 ## V2.0 重大更新：通过代理方式 支持 ViewGroup，一行代码扩展至任意 View
 
-1. ##### 支持所有 ViewGroup ，再也不用通过叠加的方式去实现了，常见
+简洁，核心代码不到100行，支持任意 View
+
+
+
+##### 添加依赖库
+
+```
+project build.gradle 中加入jitpack
+
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+
+项目的build.gradle加入
+compile 'com.github.Mr-wangyong:ShapeView:v2.0'
+```
+
+
+
+##### 1. 支持所有 ViewGroup ，再也不用通过叠加的方式去实现了，常见
+
+
 
    ```
    1. LinearLayout    -->   ShapeLiearLayout
@@ -12,67 +36,72 @@
    
    
 
-2. ##### 可一行代码扩展至任意 View及各种自定义 View
 
-   看最简单的 FrameLayout 实现
+##### 2. 可一行代码扩展至任意 View及各种自定义 View
 
-   ```
-   public class ShapeFrameLayout extends FrameLayout {
-       public ShapeFrameLayout(@NonNull Context context) {
-           this(context, null);
-       }
-   
-       public ShapeFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
-           this(context, null,0);
-       }
-   
-       public ShapeFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-           super(context, attrs, defStyleAttr);
-           ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
-       }
-   }
-   ```
+看最简单的 FrameLayout 实现
 
+```
+public class ShapeFrameLayout extends FrameLayout {
+    public ShapeFrameLayout(@NonNull Context context) {
+        this(context, null);
+    }
 
-   比如，我有一个 *NumberTextView* 自定义 View 需要扩展支持 shape
+    public ShapeFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+        this(context, null,0);
+    }
 
-   ```
-   public class ShapeNumberTextView extends NumberTextView {
-       public ShapeNumberTextView(Context context) {
-           this(context,null);
-       }
-   
-       public ShapeNumberTextView(Context context, AttributeSet attrs) {
-           this(context, attrs,0);
-       }
-   
-       public ShapeNumberTextView(Context context, AttributeSet attrs, int defStyleAttr) {
-           super(context, attrs, defStyleAttr);
-           ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
-       }
-   }
-   ```
+    public ShapeFrameLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
+    }
+}
+```
 
-   xml 中直接引用这个 View 即可
-   
-   
+比如，我有一个   **NumberTextView** 自定义 View 需要扩展支持 shape
 
-3.  fix  **strokeWidth和strokeColor与com.android.support:design:28.0.0冲突**
+```
+public class ShapeNumberTextView extends NumberTextView {
+    public ShapeNumberTextView(Context context) {
+        this(context,null);
+    }
 
+    public ShapeNumberTextView(Context context, AttributeSet attrs) {
+        this(context, attrs,0);
+    }
 
-4. 最后 贴一张全家福 ViewGroup,和普通的一模一样
+    public ShapeNumberTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
+    }
+}
+```
 
-   ![image](f.png )
+xml 中直接引用这个 View 即可
 
 
 
+##### 3.  fix  **strokeWidth和strokeColor与com.android.support:design:28.0.0冲突**
+
+
+
+##### 4. 最后 贴一张全家福 ViewGroup,和普通的一模一样
+
+![image](f.png )
 
 
 
 
 
 
-### 历史版本：
+
+
+
+
+
+##历史版本：
+
+
 
 #### V1.0
 
@@ -101,26 +130,6 @@ black_15_oval_stroke_shape.xml
 再也不用写 XML 写到**蛋疼**;
 
 
-
-
-
-#### 2. 导入
-
-添加依赖库
-
-```
-project build.gradle加入jitpack
-
-allprojects {
-	repositories {
-		...
-		maven { url "https://jitpack.io" }
-	}
-}
-
-项目的build.gradle加入
-compile 'com.github.Mr-wangyong:ShapeView:v1.0'
-```
 
 
 #### 3. 开始使用

@@ -54,8 +54,11 @@
    ```
 
    xml 中直接引用这个 View 即可
+   
+   
 
 3.  fix  **strokeWidth和strokeColor与com.android.support:design:28.0.0冲突**
+
 
 4. 最后 贴一张全家福 ViewGroup,和普通的一模一样
 

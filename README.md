@@ -1,5 +1,5 @@
 # ShapeView
-#### V2.0 重大更新：通过代理方式 支持 ViewGroup，一行代码扩展至任意 View
+## V2.0 重大更新：通过代理方式 支持 ViewGroup，一行代码扩展至任意 View
 
 1. ##### 支持所有 ViewGroup ，再也不用通过叠加的方式去实现了，常见
 
@@ -7,6 +7,8 @@
    2. RelativeLayout -->   ShapeRelativeLayout
    3. FrameLayout   -->   ShapeFrameLayout
    4. ConstraintLayout  --> ShapeConstraintLayout
+   
+   
 
 2. ##### 可一行代码扩展至任意 View及各种自定义 View
 
@@ -28,6 +30,7 @@
        }
    }
    ```
+
 
    比如，我有一个 ``NumberTextView `自定义 View 需要扩展支持 shape
 
@@ -62,7 +65,9 @@
 
 
 
-历史版本：
+
+
+### 历史版本：
 
 #### V1.0
 

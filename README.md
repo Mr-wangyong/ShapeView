@@ -32,7 +32,7 @@
    ```
 
 
-   比如，我有一个 ``NumberTextView `自定义 View 需要扩展支持 shape
+   比如，我有一个 *NumberTextView* 自定义 View 需要扩展支持 shape
 
    ```
    public class ShapeNumberTextView extends NumberTextView {

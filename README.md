@@ -33,9 +33,6 @@ compile 'com.github.Mr-wangyong:ShapeView:v2.0'
    3. FrameLayout   -->   ShapeFrameLayout
    4. ConstraintLayout  --> ShapeConstraintLayout
    ```
-   
-   
-
 
 ##### 2. 可一行代码扩展至任意 View及各种自定义 View
 
@@ -57,6 +54,7 @@ public class ShapeFrameLayout extends FrameLayout {
     }
 }
 ```
+
 
 比如，我有一个   **NumberTextView** 自定义 View 需要扩展支持 shape
 
@@ -80,22 +78,12 @@ public class ShapeNumberTextView extends NumberTextView {
 xml 中直接引用这个 View 即可
 
 
-
 ##### 3.  fix  **strokeWidth和strokeColor与com.android.support:design:28.0.0冲突**
-
 
 
 ##### 4. 最后 贴一张全家福 ViewGroup,和普通的一模一样
 
 ![image](f.png )
-
-
-
-
-
-
-
-
 
 
 

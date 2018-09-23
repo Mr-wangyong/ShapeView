@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.mrwang.ShapeLinearLayout
+            android:id="@+id/shape"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            app:cornersBottomLeftRadius="10dp"
+            app:cornersBottomRightRadius="10dp"
+            app:cornersTopLeftRadius="15dp"
+            app:cornersTopRightRadius="15dp"
+            app:shape="rectangle"
+            app:solidColor="#00ff00"
+            app:strokeShapeColor="#0000ff"
+            app:strokeShapeWidth="5dp"/>
+
+        <com.mrwang.ShapeRelativeLayout
+            android:id="@+id/shape_2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            app:shape="rectangle"
+            app:solidColor="#00ff00"
+            app:strokeShapeColor="#ff00ff"
+            app:strokeDashGap="5dp"
+            app:strokeDashWidth="10dp"
+            app:strokeShapeWidth="2dp"/>
+
+
+        <com.mrwang.ShapeFrameLayout
+            android:id="@+id/shape_4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:gradientAngle="45"
+            app:gradientCenterColor="#00ff00"
+            app:gradientEndColor="#0000ff"
+            app:gradientStartColor="#ff0000"
+            app:gradientType="linear"
+            app:shape="rectangle"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.mrwang.ShapeConstraintLayout
+            android:id="@+id/shape_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:gradientEndColor="#0000ff"
+            app:gradientRadius="100dp"
+            app:gradientStartColor="#ff0000"
+            app:gradientType="sweep"
+            app:gradientUseLevel="false"
+            app:shape="oval"/>
+
+        <com.mrwang.ShapeTextView
+            android:id="@+id/shape_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:gradientAngle="45"
+            app:gradientCenterColor="#00ff00"
+            app:gradientEndColor="#0000ff"
+            app:gradientStartColor="#ff0000"
+            app:gradientType="radial"
+            app:shape="rectangle"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -23,8 +23,8 @@
       app:cornersTopRightRadius="15dp"
       app:shape="rectangle"
       app:solidColor="#00ff00"
-      app:strokeColor="#0000ff"
-      app:strokeWidth="5dp"/>
+      app:strokeShapeColor="#0000ff"
+      app:strokeShapeWidth="5dp"/>
 
     <com.mrwang.ShapeView
       android:id="@+id/shape_2"
@@ -33,10 +33,10 @@
       android:layout_margin="5dp"
       app:shape="rectangle"
       app:solidColor="#00ff00"
-      app:strokeColor="#ff00ff"
+      app:strokeShapeColor="#ff00ff"
       app:strokeDashGap="5dp"
       app:strokeDashWidth="10dp"
-      app:strokeWidth="2dp"/>
+      app:strokeShapeWidth="2dp"/>
 
 
     <com.mrwang.ShapeView

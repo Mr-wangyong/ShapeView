@@ -14,8 +14,8 @@
     <attr name="cornersBottomLeftRadius" format="reference|dimension"/>
     <attr name="cornersBottomRightRadius" format="reference|dimension"/>
 
-    <attr name="strokeWidth" format="reference|dimension"/>
-    <attr name="strokeColor" format="reference|color"/>
+    <attr name="strokeShapeWidth" format="reference|dimension"/>
+    <attr name="strokeShapeColor" format="reference|color"/>
     <attr name="strokeDashGap" format="reference|dimension"/>
     <attr name="strokeDashWidth" format="reference|dimension"/>
 

@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
+import com.inject.ShapeBuilder;
+
 
 /**
  * User: chengwangyong(chengwangyong@blinnnk.com)
@@ -21,8 +23,14 @@ public class ShapeView extends AppCompatImageView {
         this(context, attrs, 0);
     }
 
+
     public ShapeView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
+        init();
+    }
+
+    @ShapeBuilder
+    public void init() {
+        System.out.println("inject ShapeView");
     }
 }

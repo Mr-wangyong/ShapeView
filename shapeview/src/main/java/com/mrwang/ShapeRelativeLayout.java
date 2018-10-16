@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
+import com.inject.ShapeBuilder;
+
 /**
  * @author chengwangyong
  * @date 2018/9/23
@@ -17,8 +19,8 @@ public class ShapeRelativeLayout extends RelativeLayout {
         this(context, attrs, 0);
     }
 
+    @ShapeBuilder
     public ShapeRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        ShapeViewProxy.proxyShapeAttributes(this, context, attrs, defStyleAttr);
     }
 }

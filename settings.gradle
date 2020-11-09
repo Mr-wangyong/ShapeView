@@ -1,1 +1,2 @@
+include ':buildsrc'
 include ':app', ':shapeview'

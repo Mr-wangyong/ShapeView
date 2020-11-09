@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * 在 lib中使用
  *
  * 知乎正解 https://zhuanlan.zhihu.com/p/40008022
- * 核心要点 需要在两端都配置ajc 
+ * 核心要点 需要在两端都配置ajc
  * @author chengwangyong
  * @date 2018/10/15
  */

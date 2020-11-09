@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ShapeView.iml" filepath="$PROJECT_DIR$/.idea/ShapeView.iml" group="ShapeView" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ShapeView/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc/buildsrc.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc/buildsrc.iml" group="ShapeView/buildsrc" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/shapeview/shapeview.iml" filepath="$PROJECT_DIR$/.idea/modules/shapeview/shapeview.iml" group="ShapeView/shapeview" />
     </modules>
   </component>

@@ -1,4 +1,4 @@
-package com.mrwang.shapeviewcustom;
+package com.mrwang;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatTextView;

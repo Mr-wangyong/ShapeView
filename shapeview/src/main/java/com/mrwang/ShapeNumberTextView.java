@@ -1,9 +1,8 @@
-package com.mrwang.shapeviewcustom;
+package com.mrwang;
 
 import android.content.Context;
 import android.util.AttributeSet;
-
-import com.mrwang.inject.ShapeBuild;
+import com.inject.ShapeBuilder;
 
 /**
  * @author chengwangyong
@@ -25,7 +24,7 @@ public class ShapeNumberTextView extends NumberTextView {
         init(context,attrs,defStyleAttr);
     }
 
-    @ShapeBuild
+    @ShapeBuilder
     public void init(Context context, AttributeSet attrs, int defStyleAttr) {
 
     }

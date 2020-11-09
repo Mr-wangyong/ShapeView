@@ -1,4 +1,4 @@
-package com.mrwang.inject;
+package com.inject;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,6 +11,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
+
 /**
  * @author chengwangyong
  * @date 2018/10/16
@@ -18,7 +19,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class ShapeInject{
 
-    @Pointcut("execution(@com.mrwang.inject.ShapeBuild * *(..))")
+    @Pointcut("execution(@com.inject.ShapeBuilder * *(..))")
     public void DebugToolMethod() {
     }
 

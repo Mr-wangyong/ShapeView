@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShapeView.iml" filepath="$PROJECT_DIR$/ShapeView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shapeview/shapeview.iml" filepath="$PROJECT_DIR$/shapeview/shapeview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ShapeView.iml" filepath="$PROJECT_DIR$/.idea/ShapeView.iml" group="ShapeView" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="ShapeView/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shapeview/shapeview.iml" filepath="$PROJECT_DIR$/.idea/modules/shapeview/shapeview.iml" group="ShapeView/shapeview" />
     </modules>
   </component>
 </project>
